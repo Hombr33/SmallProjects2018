@@ -1,0 +1,9 @@
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPicker\bin\Debug\ColorWheel.Controls.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPicker\bin\Debug\ColorWheel.Core.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPicker\bin\Debug\Icons\chip.ico
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPicker\bin\Debug\Labels.txt
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPicker\bin\Debug\PokerPicker.exe
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPicker\bin\Debug\PokerPicker.exe.config
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\bin\Debug\ProductActivationAction.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPicker\bin\Debug\Xceed.Wpf.Toolkit.dll

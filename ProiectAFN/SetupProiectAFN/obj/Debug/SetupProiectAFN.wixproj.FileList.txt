@@ -1,0 +1,6 @@
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\SetupProiectAFN\bin\Debug\SetupProiectAFN.msi
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\SetupProiectAFN\bin\Debug\SetupProiectAFN.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\SetupProiectAFN.wixproj.BindContentsFileListnull.txt
+obj\Debug\SetupProiectAFN.wixproj.BindOutputsFileListnull.txt
+obj\Debug\SetupProiectAFN.wixproj.BindBuiltOutputsFileListnull.txt

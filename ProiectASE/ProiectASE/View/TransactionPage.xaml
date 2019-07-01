@@ -1,0 +1,35 @@
+﻿<Window x:Class="ProiectASE.View.TransactionPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProiectASE.View"
+        mc:Ignorable="d"
+        Title="Tranzactii" Height="200" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Column="0" Grid.Row="0">
+            <TextBlock Text="Nume Client: " FontSize="25" Margin="30, 25, 10, 10" />
+            <TextBlock x:Name="uiTBName" FontSize="25" Margin="10, 25, 10, 10" />
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="0">
+            <TextBlock Text="Nume Produs: " FontSize="25" Margin="30, 25, 10, 10" />
+            <TextBlock x:Name="uiTBProductName" FontSize="25" Margin="10, 25, 10, 10" />
+        </WrapPanel>
+        <WrapPanel Grid.Column="0" Grid.Row="1">
+            <TextBlock Text="ID Tranzactie: " FontSize="25" Margin="30, 25, 10, 10" />
+            <TextBlock x:Name="uiTBID" FontSize="25" Margin="10, 25, 10, 10" />
+        </WrapPanel>
+        <WrapPanel Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="Plata: " FontSize="25" Margin="30, 25, 10, 10" />
+            <TextBlock x:Name="uiTBPret" FontSize="25" Margin="10, 25, 10, 10" />
+        </WrapPanel>
+    </Grid>
+</Window>

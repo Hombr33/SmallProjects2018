@@ -1,0 +1,12 @@
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\obj\x86\Debug\ProductActivationAction.frmLicenseInfo.resources
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\obj\x86\Debug\ProductActivationAction.csproj.GenerateResource.cache
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\obj\x86\Debug\ProductActivationAction.csproj.CoreCompileInputs.cache
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\obj\x86\Debug\ProductActivationAction.csprojAssemblyReference.cache
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\bin\Debug\ProductActivationAction.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\bin\Debug\ProductActivationAction.CA.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\bin\Debug\ProductActivationAction.pdb
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\obj\x86\Debug\ProductActivationAction.csproj.CopyComplete
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\obj\x86\Debug\ProductActivationAction.dll
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\ProductActivationAction\obj\x86\Debug\ProductActivationAction.pdb

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define ProiectAFN_TargetDir=$(var.ProiectAFN.TargetDir)?>
+	<Product Id="*" Name="Proiect AFN" Language="1033" Version="1.0.0.0" Manufacturer="DamianRadinoiu" UpgradeCode="bf1b0021-043b-4416-a7cc-76594533c559">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" AdminImage="yes" InstallPrivileges="elevated" />
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+    
+    <Icon Id="Icon.ico" SourceFile="Icon.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="Icon.ico" />
+    
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes"/>
+
+		<Feature Id="ProductFeature" Title="SetupProiectAFN" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="SetupProiectAFN" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="ProiectAFN.exe" Guid="c8692a45-f323-4b37-a6e5-0832ead7d81f">
+			  <File Id="ProiectAFN.exe" Name="ProiectAFN.exe" Source="$(var.ProiectAFN_TargetDir)ProiectAFN.exe" />
+			</Component>
+			<Component Id="ProiectAFN.exe.config" Guid="d4feb95f-61b9-472f-83fe-681185b80b78">
+			  <File Id="ProiectAFN.exe.config" Name="ProiectAFN.exe.config" Source="$(var.ProiectAFN_TargetDir)ProiectAFN.exe.config" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

@@ -1,0 +1,2 @@
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPickerSetup\bin\Debug\Poker Picker.msi
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPickerSetup\bin\Debug\Poker Picker.wixpdb

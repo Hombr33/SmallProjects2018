@@ -1,0 +1,77 @@
+﻿<Window x:Class="PokerPicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokerPicker"
+        xmlns:cw="clr-namespace:ColorWheel.Controls;assembly=ColorWheel.Controls"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Poker Picker" Height="800" Width="1000" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="chip.ico">
+    <Canvas x:Name="uiMainCanvas">
+        <Label Margin="50, 25, 0, 0" FontSize="30">Winner, Winner! Chicken Dinner!</Label>
+        <Grid x:Name="uiMainGrid" Height="600" Width="700" Margin="50, 80, 0, 0" ShowGridLines="False"
+              MouseDown="uiMainGrid_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+        </Grid>
+        <StackPanel x:Name="uiMainStackPanel" Height="600" Width="150" Margin="800, 80, 0, 0"
+                    MouseUp="uiMainStackPanel_MouseUp">
+            <xctk:ColorPicker x:Name="uiColorpicker"
+                ShowAvailableColors="True" 
+                ShowStandardColors="True" 
+                ShowRecentColors="True" 
+                ShowTabHeaders="False" 
+                ColorMode="ColorCanvas"
+                SelectedColorChanged="ColorPicker_SelectedColorChanged"
+                MouseEnter="ColorPicker_MouseEnter"
+                MouseLeave="ColorPicker_MouseLeave"></xctk:ColorPicker>
+            <ListBox x:Name="uiColorsList" Width="50" Height="400" Margin="0, 30, 0, 0">
+                <Ellipse Stroke="Black" Width="25" Height="25" Margin="5, 5, 0, 5"></Ellipse>
+                <Ellipse Stroke="Black" Width="25" Height="25" Margin="5, 5, 0, 5"></Ellipse>
+                <Ellipse Stroke="Black" Width="25" Height="25" Margin="5, 5, 0, 5"></Ellipse>
+                <Ellipse Stroke="Black" Width="25" Height="25" Margin="5, 5, 0, 5"></Ellipse>
+                <Ellipse Stroke="Black" Width="25" Height="25" Margin="5, 5, 0, 5"></Ellipse>
+            </ListBox>
+            <StackPanel Width="150" Height="30" Orientation="Horizontal" Margin="0, 10, 0, 0">
+                <Button Width="40" Height="25" Margin="7, 0, 0, 0" Content="Add" FontSize="15" Click="Add_Click"></Button>
+                <Button Width="40" Height="25" Margin="7, 0, 0, 0" Content="Save" FontSize="15" Click="Save_Click"></Button>
+                <Button Width="40" Height="25" Margin="7, 0, 0, 0" Content="Clear" FontSize="15" Click="Clear_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel x:Name="uiBottomStackPanel" Height="50" Width="700" Margin="50, 700, 0, 0" Orientation="Horizontal">
+            <Button Height="50" Width="300"
+                    FontSize="15" FontStyle="Italic" Content="RESET ALL" Margin="0, 0, 50, 0" Click="Reset_Click" />
+            <Button Height="50" Width="300" 
+                    FontSize="15" FontStyle="Italic"  Content="ERASE CELL" Margin="50, 0, 0, 0" Click="Erase_Click"/>
+        </StackPanel>
+    </Canvas>
+</Window>

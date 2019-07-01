@@ -1,0 +1,31 @@
+﻿<Window x:Class="ProiectASE.View.ProductRegistrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProiectASE.View"
+        mc:Ignorable="d"
+        Title="Tabela Inregistrare" Height="480" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Canvas>
+        <TextBlock Text="Inregistrare Produs" 
+                 FontSize="25" FontWeight="Bold"
+                 Canvas.Left="200" Canvas.Top="30"></TextBlock>
+        <TextBlock Text="Numele Produsului: " 
+                 FontSize="25" FontStyle="Italic"
+                 Canvas.Left="50" Canvas.Top="100"></TextBlock>
+        <TextBlock Text="Pretul Produsului: " 
+                 FontSize="25" FontStyle="Italic"
+                 Canvas.Left="50" Canvas.Top="180"></TextBlock>
+        <TextBlock Text="Data Producerii: " 
+                 FontSize="25" FontStyle="Italic"
+                 Canvas.Left="50" Canvas.Top="260"></TextBlock>
+        <TextBlock Text="Data Expirarii: " 
+                 FontSize="25" FontStyle="Italic"
+                 Canvas.Left="50" Canvas.Top="340"></TextBlock>
+        <TextBox x:Name="uiNameTB" FontSize="18" Canvas.Left="300" Canvas.Top="100" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBox>
+        <TextBox x:Name="uiPriceTB" FontSize="18" Canvas.Left="300" Canvas.Top="180" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" KeyDown="uiBudgetTB_KeyDown"></TextBox>
+        <DatePicker x:Name="uiPDTB" FontSize="18" Canvas.Left="300" Canvas.Top="260" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"></DatePicker>
+        <DatePicker x:Name="uiEDTB" FontSize="18" Canvas.Left="300" Canvas.Top="340" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"></DatePicker>
+        <Button Width="100" Height="30" Canvas.Left="240" Canvas.Top="405" Content="Finalizare" FontSize="15" Background="#f44141" Click="Button_Click"/>
+    </Canvas>
+</Window>

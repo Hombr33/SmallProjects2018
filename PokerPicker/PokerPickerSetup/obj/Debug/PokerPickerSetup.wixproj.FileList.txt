@@ -1,0 +1,6 @@
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPickerSetup\bin\Debug\Poker Picker.msi
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\PokerPicker\PokerPickerSetup\bin\Debug\Poker Picker.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\PokerPickerSetup.wixproj.BindContentsFileListnull.txt
+obj\Debug\PokerPickerSetup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\PokerPickerSetup.wixproj.BindBuiltOutputsFileListnull.txt

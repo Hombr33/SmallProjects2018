@@ -1,0 +1,2 @@
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\bin\Debug\ProiectAFN.exe
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\bin\Debug\ProiectAFN.exe.config

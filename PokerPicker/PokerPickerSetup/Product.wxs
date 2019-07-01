@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define PokerPicker_TargetDir=$(var.PokerPicker.TargetDir)?><?define ProductActivationAction_TargetDir=$(var.ProductActivationAction.TargetDir)?>
+	<Product Id="538209e6-c1bb-45f3-90d6-cbf781988f1b" Name="PokerPickerSetup" Language="1033" Version="1.0.0.0" Manufacturer="DamianRadinoiuSoftware" UpgradeCode="42d23bd2-8daf-426a-840c-0426877bd84e">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" InstallPrivileges="elevated" />
+
+    <Icon Id="chip.ico" SourceFile="$(var.PokerPicker_TargetDir)Icons\chip.ico" />
+    <Property Id="ARPPRODUCTICON" Value="chip.ico" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+
+    <UIRef Id="WixUI_InstallDir" />
+    
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="PokerPickerSetup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="ApplicationShortcutDesktop" />
+			<ComponentGroupRef Id="Icons_files" />
+		</Feature>
+
+    <InstallExecuteSequence>
+      <Custom Action="LicenseInfoCustomAction" Before="InstallFinalize">NOT Installed</Custom>
+    </InstallExecuteSequence>
+	</Product>
+
+  <Fragment>
+    <Binary Id="CustomActionBinary" SourceFile="$(var.ProductActivationAction.TargetDir)$(var.ProductActivationAction.TargetName).CA.dll" />
+    <CustomAction Id="LicenseInfoCustomAction" BinaryKey="CustomActionBinary" DllEntry="ShowLicenseInfo" Execute="immediate" Return="check" />
+  </Fragment>
+
+  <Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="PokerPickerSetup">
+				  <Directory Id="Icons" Name="Icons" />
+				</Directory>
+			</Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="PokerPickerSetup" />
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop" />
+		</Directory>
+	</Fragment>
+
+  <Fragment>
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="1be5dde2-3ab1-4dca-b64b-fa88b5c7bb47">
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="PokerPicker" Description="Poker Picker" Target="[INSTALLFOLDER]PokerPicker.exe" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\DamianRadinoiuSoftware" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="ApplicationShortcutDesktop" Guid="44f32a42-91a5-4d99-a6fd-2faef1345cb9">
+        <Shortcut Id="ApplicationDesktopShortcut" Name="PokerPicker" Description="Poker Picker" Target="[INSTALLFOLDER]PokerPicker.exe" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="RemoveDesktopFolder" Directory="DesktopFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\DamianRadinoiuSoftware" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+
+  <Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+		<Component Id="PokerPicker.exe" Guid="40232a70-1f59-4fa2-9722-deee90097894">
+		  <File Id="PokerPicker.exe" Name="PokerPicker.exe" Source="$(var.PokerPicker_TargetDir)PokerPicker.exe" />
+		</Component>
+		<Component Id="PokerPicker.exe.config" Guid="2af22d74-884a-4344-9a53-cffc814984ab">
+		  <File Id="PokerPicker.exe.config" Name="PokerPicker.exe.config" Source="$(var.PokerPicker_TargetDir)PokerPicker.exe.config" />
+		</Component>
+		<Component Id="Xceed.Wpf.Toolkit.dll" Guid="5fad43d3-cf59-46f9-b260-b707faead4b8">
+		  <File Id="Xceed.Wpf.Toolkit.dll" Name="Xceed.Wpf.Toolkit.dll" Source="$(var.PokerPicker_TargetDir)Xceed.Wpf.Toolkit.dll" />
+		</Component>
+		<Component Id="ColorWheel.Controls.dll" Guid="d21d0075-96ee-4d82-8ded-9c30217aef02">
+		  <File Id="ColorWheel.Controls.dll" Name="ColorWheel.Controls.dll" Source="$(var.PokerPicker_TargetDir)ColorWheel.Controls.dll" />
+		</Component>
+		<Component Id="ColorWheel.Core.dll" Guid="e5d653db-dc15-45bb-b1eb-2759b7fa204d">
+		  <File Id="ColorWheel.Core.dll" Name="ColorWheel.Core.dll" Source="$(var.PokerPicker_TargetDir)ColorWheel.Core.dll" />
+		</Component>
+		<Component Id="ProductActivationAction.dll" Guid="8cae9c64-4030-42f5-b3cb-5b84f8d30406">
+		  <File Id="ProductActivationAction.dll" Name="ProductActivationAction.dll" Source="$(var.ProductActivationAction_TargetDir)ProductActivationAction.dll" />
+		</Component>
+		<Component Id="Microsoft.Deployment.WindowsInstaller.dll" Guid="6ee191ac-aa43-4917-afc0-037faed917dc">
+		  <File Id="Microsoft.Deployment.WindowsInstaller.dll" Name="Microsoft.Deployment.WindowsInstaller.dll" Source="$(var.ProductActivationAction_TargetDir)Microsoft.Deployment.WindowsInstaller.dll" />
+		</Component>
+		<Component Id="Labels.txt" Guid="a916d847-59f8-46b5-a28b-6fc4099f51c8">
+		  <File Id="Labels.txt" Name="Labels.txt" Source="$(var.PokerPicker_TargetDir)Labels.txt" />
+		</Component>
+      
+		</ComponentGroup>
+	</Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="Icons_files" Directory="Icons">
+      <Component Id="Icons_chip.ico" Guid="7574fc99-1ee6-47c1-a3f7-7e926c70f6d8">
+        <File Id="Icons_chip.ico" Name="chip.ico" Source="$(var.PokerPicker_TargetDir)Icons\chip.ico" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

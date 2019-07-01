@@ -1,0 +1,23 @@
+﻿<Window x:Class="ProiectASE.View.ClientRegistrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProiectASE.View"
+        mc:Ignorable="d"
+        Title="Tabela Inregistrare" Height="320" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Canvas>
+        <TextBlock Text="Inregistrare Clienti" 
+                 FontSize="25" FontWeight="Bold"
+                 Canvas.Left="200" Canvas.Top="30"></TextBlock>
+        <TextBlock Text="Numele Clientului: " 
+                 FontSize="25" FontStyle="Italic"
+                 Canvas.Left="50" Canvas.Top="100"></TextBlock>
+        <TextBlock Text="Bugetul Clientului: " 
+                 FontSize="25" FontStyle="Italic"
+                 Canvas.Left="50" Canvas.Top="180"></TextBlock>
+        <TextBox x:Name="uiNameTB" FontSize="18" Canvas.Left="300" Canvas.Top="100" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBox>
+        <TextBox x:Name="uiBudgetTB" FontSize="18" Canvas.Left="300" Canvas.Top="180" Width="200" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" KeyDown="uiBudgetTB_KeyDown"></TextBox>
+        <Button Width="100" Height="30" Canvas.Left="240" Canvas.Top="235" Content="Finalizare" FontSize="15" Background="#429ef4" Click="Button_Click"/>
+    </Canvas>
+</Window>

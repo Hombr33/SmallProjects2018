@@ -1,0 +1,14 @@
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\bin\Debug\ProiectAFN.exe.config
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\bin\Debug\ProiectAFN.exe
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\bin\Debug\ProiectAFN.pdb
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\MainWindow.g.cs
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\App.g.cs
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN_MarkupCompile.cache
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN_MarkupCompile.lref
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\MainWindow.baml
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN.g.resources
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN.Properties.Resources.resources
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN.csproj.GenerateResource.cache
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN.csproj.CoreCompileInputs.cache
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN.exe
+C:\Users\D1996e\Documents\Visual Studio 2017\Projects\ProiectAFN\ProiectAFN\obj\Debug\ProiectAFN.pdb
